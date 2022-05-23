@@ -6,7 +6,7 @@
 name: Run this action every X minutes
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/15 * * * *'
 
 jobs:
   run-me:
