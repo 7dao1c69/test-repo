@@ -16,4 +16,3 @@ jobs:
           echo "I am starting"
           sleep 10
           echo "I am done"
-        uses: actions/checkout@v2
