@@ -1,0 +1,19 @@
+##################################################################
+# A Github action used to run tasks
+# More info at https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions
+##################################################################
+
+name: Run this action every X minutes
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  run-me:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "I am starting"
+          sleep 10
+          echo "I am done"
